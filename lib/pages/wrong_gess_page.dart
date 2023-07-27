@@ -15,7 +15,7 @@ class WrongGessPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              "Sorry! Wrong guess! Try again!",
+              "Sorry! Wrong guess.Try again!",
               style: TextStyle(fontSize: 25),
             ),
             const SizedBox(height: 20),

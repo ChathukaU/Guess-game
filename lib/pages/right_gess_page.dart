@@ -16,7 +16,7 @@ class RightGessPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              "Congratulations! Right Gess\nMy secret number is",
+              "Congratulations! You've guessed it correctly\nMy secret number is",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 30),
             ),
