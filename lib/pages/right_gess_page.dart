@@ -11,37 +11,40 @@ class RightGessPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Guess Game'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              "Congratulations! You've guessed it correctly\nMy secret number is",
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 30),
-            ),
-            const SizedBox(height: 10),
-            Text(
-              "$myNumber",
-              style: const TextStyle(fontSize: 30),
-            ),
-            const SizedBox(height: 10),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
-                ),
-                onPressed: () {
-                  //push replacement
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const HomePage()));
-                },
-                child: const Text(
-                  "Start Again",
-                  style: TextStyle(fontSize: 20),
-                ))
-          ],
+      body: Container(
+        color: Colors.green.shade100,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                "Congratulations! You've guessed it correctly\nMy secret number is",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 25),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                "$myNumber",
+                style: const TextStyle(fontSize: 30),
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                  ),
+                  onPressed: () {
+                    //push replacement
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()));
+                  },
+                  child: const Text(
+                    "Start the Game Again",
+                    style: TextStyle(fontSize: 20),
+                  ))
+            ],
+          ),
         ),
       ),
     );
